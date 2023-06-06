@@ -1,0 +1,38 @@
+lockfileVersion: '6.1'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+dependencies:
+  fp-ts:
+    specifier: ^2.16.0
+    version: 2.16.0
+  rxjs:
+    specifier: ^7.8.1
+    version: 7.8.1
+
+devDependencies:
+  bun-types:
+    specifier: ^0.6.0
+    version: 0.6.7
+
+packages:
+
+  /bun-types@0.6.7:
+    resolution: {integrity: sha512-LZjqqhQfr+Rue3TRwF4Z8v37shty7SnovflUb9kdJfsbuLfMlS+sPMMyFz4eU8H1BxkbK4P+P+nXXDaLOpwqxg==}
+    dev: true
+
+  /fp-ts@2.16.0:
+    resolution: {integrity: sha512-bLq+KgbiXdTEoT1zcARrWEpa5z6A/8b7PcDW7Gef3NSisQ+VS7ll2Xbf1E+xsgik0rWub/8u0qP/iTTjj+PhxQ==}
+    dev: false
+
+  /rxjs@7.8.1:
+    resolution: {integrity: sha512-AA3TVj+0A2iuIoQkWEK/tqFjBq2j+6PO6Y0zJcvzLAFhEFIO3HL0vls9hWLncZbAAbK0mar7oZ4V079I/qPMxg==}
+    dependencies:
+      tslib: 2.5.3
+    dev: false
+
+  /tslib@2.5.3:
+    resolution: {integrity: sha512-mSxlJJwl3BMEQCUNnxXBU9jP4JBktcEGhURcPR6VQVlnP0FdDEsIaz0C35dXNGLyRfrATNofF0F5p2KPxQgB+w==}
+    dev: false

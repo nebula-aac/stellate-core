@@ -1,5 +1,5 @@
 {
-  "name": "stellate",
+  "name": "@fenixui-org/stellate-core",
   "module": "index.ts",
   "type": "module",
   "devDependencies": {
@@ -9,6 +9,7 @@
     "typescript": "^5.0.0"
   },
   "dependencies": {
+    "fp-ts": "^2.16.0",
     "rxjs": "^7.8.1"
   }
 }
