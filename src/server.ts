@@ -21,13 +21,21 @@ class Stellate {
             }
         }) as Observable<{ req: IncomingMessage, res: ServerResponse }>
     }
-    public get(path: string, handler: (req: IncomingMessage, res: ServerResponse) => void) {
+    public method(
+        method: string,
+        path: string,
+        handler: (req: IncomingMessage, res: ServerResponse) => void
+    ) {
         this.requestObservable.subscribe(({ req, res }) => {
-            if(req.method === 'GET' && req.url === path) {
+            if (req.method?.toLowerCase() === method.toLowerCase() && req.url === path) {
                 handler(req, res)
             }
         })
     }
+    public get = this.method.bind(this, 'get')
+    public post = this.method.bind(this, 'post')
+    public put = this.method.bind(this, 'put')
+    public delete = this.method.bind(this, 'delete')
 }
 
 export default Stellate
